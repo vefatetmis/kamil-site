@@ -317,7 +317,7 @@ footer .satir{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-co
     </a>
     <div class="sayilar" style="max-width:620px;margin-left:auto;margin-right:auto">
       <div><b>10</b><span>Güç</span></div>
-      <div><b>8</b><span>Gemi</span></div>
+      <div><b>7</b><span>Gemi</span></div>
       <div><b>6</b><span>Boss</span></div>
       <div><b>8</b><span>Dil</span></div>
     </div>
@@ -374,7 +374,7 @@ footer .satir{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-co
 
 <section class="kus">
   <p class="etiket">Bosslar</p>
-  <h2 data-imlec-aura>Altı boss, her birinin kendi deseni</h2>
+  <h2 data-yazi-dolum>Altı boss.<br>Hepsini yenebilecek misin?</h2>
   <p class="girus" style="max-width:52ch">
     Devriye sağa sola gidiyor, salkım tek başına gelmiyor, halka etrafını
     tarıyor, mızrak doğrudan konuya giriyor. Altısını da geçince ikişerli
@@ -963,19 +963,24 @@ footer .satir{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-co
     // görünüyor, alttaki başlıkla karışıp "Ne kayanamazsırsın" gibi bir şey
     // çıkıyordu. Elips kelimenin tamamını alıyor, yani ziyaretçi yarım değil
     // BÜTÜN cevabı görüyor.
-    var EN = 330, BOY = 84;
-    var EN_YAKIN = 400, BOY_YAKIN = 96;
+    // KÜÇÜLDÜ. Geniş elips başlığın neredeyse tamamını kaplıyordu, yani
+    // "pencere" hissi kalmıyor, iki yazı sürekli yer değiştiriyordu.
+    var EN = 258, BOY = 62;
+    var EN_YAKIN = 292, BOY_YAKIN = 70;
     var hedef = { x: -9999, y: -9999 }, simdi = { x: -9999, y: -9999 };
     var en = EN, enHedef = EN, boy = BOY, boyHedef = BOY;
     var calisiyor = false;
 
     function yaz() {
-      // Maske dairesi: içi tamamen opak, kenarı yumuşak. Sert kenar makasla
-      // kesilmiş gibi duruyordu.
+      // KENAR KESKİN. Önce yumuşak bir geçişti ve iki yazı kenarda birbirine
+      // karışıyordu: yarı saydam bölgede hem "dayanırsın" hem "Dayanamazsın"
+      // aynı anda okunuyor, ikisi de bulanık çıkıyordu. Keskin kenar ikisini
+      // ayırıyor; renk farkı (ak ve kırmızı) zaten hangisinin hangisi
+      // olduğunu söylüyor. Son %2 yalnızca tırtıklı kenarı önlüyor.
       var m = "radial-gradient(ellipse " + (en / 2).toFixed(0) + "px " +
         (boy / 2).toFixed(0) + "px at " +
         simdi.x.toFixed(0) + "px " + simdi.y.toFixed(0) +
-        "px, #000 0 66%, rgba(0,0,0,.4) 84%, transparent 100%)";
+        "px, #000 0 98%, transparent 100%)";
       gizli.style.webkitMaskImage = m;
       gizli.style.maskImage = m;
     }
