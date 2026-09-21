@@ -42,20 +42,6 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-/* KAMİL İMLECİ BÜTÜN SAYFADA. Gemi sabit bir eğimde duruyor, imlecin yönüne
-   göre dönmüyor: Bilal "Microsoft imleci gibi eğik dursun" dedi ve dönen bir
-   imleç zaten okuma sırasında dikkat dağıtıyor.
-
-   YALNIZCA İNCE İŞARETÇİDE. Dokunmatikte imleç diye bir şey yok, orada
-   tanımlamak boşuna. Sonda `auto` duruyor: görsel yüklenmezse ziyaretçi
-   imleçsiz kalmıyor. */
-@media (hover:hover) and (pointer:fine){
-  body,body *{cursor:url(data:image/png;base64,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) 0 0, auto}
-  /* Tıklanabilir ve yazılabilir olanlar KENDİ imlecini koruyor: gemi her yerde
-     aynı görünseydi neyin bağlantı olduğu anlaşılmazdı. */
-  a,button,summary,[role="button"],label,select{cursor:pointer}
-  input,textarea{cursor:text}
-}
 body{margin:0;background:var(--uzay);color:var(--metin);font-family:var(--sans);
   font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
 img{max-width:100%}
@@ -291,6 +277,25 @@ footer .satir{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-co
   background:var(--uzay);
   -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
 .maske-gizli h2{color:#ff4d6d;margin:0}
+</style>
+<style>/* Kamil imleci. YALNIZCA OYUNUN SAYFASINDA.
+ *
+ * Anasayfa stüdyonun sayfası; orada geminin imleç olması oyunu stüdyonun
+ * önüne geçiriyor. Aynı sebeple uzay sahnesi ve düşman alanı da orada değil.
+ *
+ * Gemi sabit bir eğimde duruyor, imlecin yönüne göre dönmüyor: dönen bir
+ * imleç okuma sırasında dikkat dağıtıyor.
+ *
+ * YALNIZCA İNCE İŞARETÇİDE. Dokunmatikte imleç diye bir şey yok. Sonda
+ * `auto` duruyor: görsel yüklenmezse ziyaretçi imleçsiz kalmıyor.
+ */
+@media (hover:hover) and (pointer:fine){
+  body,body *{cursor:url(data:image/png;base64,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) 4 0, auto}
+  /* Tıklanabilir ve yazılabilir olanlar KENDİ imlecini koruyor: gemi her
+     yerde aynı görünseydi neyin bağlantı olduğu anlaşılmazdı. */
+  a,button,summary,[role="button"],label,select{cursor:pointer}
+  input,textarea{cursor:text}
+}
 </style>
 </head>
 <body>
@@ -859,17 +864,19 @@ footer .satir{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-co
     // katman bırakmak iki yazıyı üst üste okunmaz hale getiriyordu.
     if (durgun || !ince) { gizli.remove(); return; }
 
-    // MASKE DAİRE DEĞİL, ELİPS. Daireyle denendi ve okunmadı: gizli yazı
-    // ("Dayanamazsın") daireden uzun olduğu için ortasından bir dilim
-    // görünüyor, alttaki başlıkla karışıp "Ne kayanamazsırsın" gibi bir şey
-    // çıkıyordu. Elips kelimenin tamamını alıyor, yani ziyaretçi yarım değil
-    // BÜTÜN cevabı görüyor.
-    // KÜÇÜLDÜ. Geniş elips başlığın neredeyse tamamını kaplıyordu, yani
-    // "pencere" hissi kalmıyor, iki yazı sürekli yer değiştiriyordu.
-    var EN = 258, BOY = 62;
-    var EN_YAKIN = 292, BOY_YAKIN = 70;
+    // MASKE DAİRE VE KÜÇÜK.
+    //
+    // Önce elipsti: gizli yazının tamamını göstersin diye. Ama geniş elips
+    // başlığın neredeyse tamamını kaplıyordu, yani "pencere" hissi kalmıyor,
+    // iki yazı toptan yer değiştiriyordu. Küçük daire pencereyi geri
+    // getiriyor: ziyaretçi cevabı okumak için imleci gezdirmek zorunda.
+    //
+    // Daire ilk denemede okunmamıştı ama sebebi ölçü değil KENARDI: yumuşak
+    // geçişte iki yazı üst üste biniyordu. Kenar artık keskin ve renk farkı
+    // (ak ve kırmızı) hangisinin hangisi olduğunu söylüyor.
+    var CAP = 132, CAP_YAKIN = 152;
     var hedef = { x: -9999, y: -9999 }, simdi = { x: -9999, y: -9999 };
-    var en = EN, enHedef = EN, boy = BOY, boyHedef = BOY;
+    var cap = CAP, capHedef = CAP;
     var calisiyor = false;
 
     function yaz() {
@@ -878,8 +885,7 @@ footer .satir{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-co
       // aynı anda okunuyor, ikisi de bulanık çıkıyordu. Keskin kenar ikisini
       // ayırıyor; renk farkı (ak ve kırmızı) zaten hangisinin hangisi
       // olduğunu söylüyor. Son %2 yalnızca tırtıklı kenarı önlüyor.
-      var m = "radial-gradient(ellipse " + (en / 2).toFixed(0) + "px " +
-        (boy / 2).toFixed(0) + "px at " +
+      var m = "radial-gradient(circle " + (cap / 2).toFixed(0) + "px at " +
         simdi.x.toFixed(0) + "px " + simdi.y.toFixed(0) +
         "px, #000 0 98%, transparent 100%)";
       gizli.style.webkitMaskImage = m;
@@ -889,11 +895,10 @@ footer .satir{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-co
     function kare() {
       simdi.x += (hedef.x - simdi.x) * 0.22;
       simdi.y += (hedef.y - simdi.y) * 0.22;
-      en += (enHedef - en) * 0.14;
-      boy += (boyHedef - boy) * 0.14;
+      cap += (capHedef - cap) * 0.14;
       yaz();
       if (Math.abs(hedef.x - simdi.x) < 0.5 && Math.abs(hedef.y - simdi.y) < 0.5
-          && Math.abs(enHedef - en) < 0.5) {
+          && Math.abs(capHedef - cap) < 0.5) {
         calisiyor = false;
         return;
       }
@@ -915,10 +920,10 @@ footer .satir{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-co
     });
 
     kutu.addEventListener("pointerenter", function () {
-      enHedef = EN_YAKIN; boyHedef = BOY_YAKIN; uyar();
+      capHedef = CAP_YAKIN; uyar();
     });
     kutu.addEventListener("pointerleave", function () {
-      enHedef = EN; boyHedef = BOY;
+      capHedef = CAP;
       hedef = { x: -9999, y: -9999 };
       simdi = { x: -9999, y: -9999 };
       yaz();
