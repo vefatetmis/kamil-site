@@ -1,0 +1,63 @@
+{
+  "_aciklama": "Oyun acilista bunu okur. Her yayinda kod, ad ve notlar guncellenmeli. 1.7.2'den beri kamil.bronzecloud.studio/surum.json; bronzecloud.studio/surum.json 1.7.0'da DONDURULDU.",
+  "kod": 11,
+  "ad": "1.7.2",
+  "notlar": {
+    "tr": [
+      "Düşmanlar yeni bir giriş animasyonuyla beliriyor",
+      "Taret bitince yazan skor artık doğru",
+      "Rehberli turdaki kart hataları giderildi",
+      "Rehberli tur bitince oyun doğrudan başlıyor",
+      "Yeni sürüm bildirimi düzeltildi"
+    ],
+    "en": [
+      "Enemies appear with a new entry animation",
+      "The score shown when the turret ends is now correct",
+      "Fixed card issues in the guided tour",
+      "The game starts right away after the guided tour",
+      "The new version notice has been fixed"
+    ],
+    "de": [
+      "Gegner erscheinen mit einer neuen Einflug-Animation",
+      "Die Punktzahl am Ende des Geschützes stimmt jetzt",
+      "Kartenfehler in der geführten Runde behoben",
+      "Nach der geführten Runde startet das Spiel sofort",
+      "Hinweis auf neue Versionen korrigiert"
+    ],
+    "fr": [
+      "Les ennemis apparaissent avec une nouvelle animation d'arrivée",
+      "Le score affiché à la fin de la tourelle est désormais correct",
+      "Bugs des cartes du tour guidé corrigés",
+      "La partie commence directement après le tour guidé",
+      "Correction de l'avis de nouvelle version"
+    ],
+    "es": [
+      "Los enemigos aparecen con una nueva animación de entrada",
+      "La puntuación al terminar la torreta ahora es correcta",
+      "Corregidos fallos de las tarjetas del recorrido guiado",
+      "La partida empieza justo después del recorrido guiado",
+      "Corregido el aviso de nueva versión"
+    ],
+    "pt": [
+      "Os inimigos surgem com uma nova animação de entrada",
+      "A pontuação no fim da torreta agora está correta",
+      "Corrigidos erros nos cartões do tour guiado",
+      "A partida começa logo após o tour guiado",
+      "Corrigido o aviso de nova versão"
+    ],
+    "ru": [
+      "Враги появляются с новой анимацией",
+      "Счёт в конце работы турели теперь правильный",
+      "Исправлены ошибки карточек в обучении",
+      "После обучения игра начинается сразу",
+      "Исправлено уведомление о новой версии"
+    ],
+    "ja": [
+      "敵の出現アニメーションを一新",
+      "タレット終了時のスコア表示を修正",
+      "ガイドツアーのカード表示を修正",
+      "ガイドツアー終了後すぐにゲーム開始",
+      "新バージョンのお知らせを修正"
+    ]
+  }
+}
